@@ -13,3 +13,5 @@ for domain in domains:
     except socket.gaierror:
         # If the domain doesn't resolve, print an error message
         print(f"{domain} does not resolve")
+
+# Usage for domain in $(cat domains); do python3 {script_name} $domain; done;
